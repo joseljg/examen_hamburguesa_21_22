@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="tam1"> 30sp</dimen>
+    <dimen name="tam2"> 20sp</dimen>
+    <dimen name="margenes1">30dp</dimen>
+</resources>

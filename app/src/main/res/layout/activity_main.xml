@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/img_hamburguesa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/hamburguesa"
+        tools:ignore="ImageContrastCheck"
+        android:contentDescription="@string/img_hamburguesa" />
+
+    <EditText
+        android:id="@+id/edt_hamburguesa"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margenes1"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="@dimen/margenes1"
+        android:ems="10"
+        android:hint="@string/nombre_hamburguesa"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/color_edt_hint"
+        android:textSize="@dimen/tam1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_hamburguesa"
+        android:autofillHints="hamburguesa" />
+
+    <EditText
+        android:id="@+id/edt_complemento"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margenes1"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="@dimen/margenes1"
+        android:ems="10"
+        android:hint="@string/nombre_complemento"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/color_edt_hint"
+        android:textSize="@dimen/tam1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_hamburguesa"
+        android:autofillHints="complemento" />
+
+    <Button
+        android:id="@+id/bt_siguiente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="@dimen/margenes1"
+        android:onClick="siguiente"
+        android:text="@string/siguiente"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_complemento" />
+</androidx.constraintlayout.widget.ConstraintLayout>

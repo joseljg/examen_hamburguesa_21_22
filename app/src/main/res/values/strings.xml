@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Examen Hamburguesa</string>
+    <string name="nombre_hamburguesa">Nombre Hamburguesa</string>
+    <string name="nombre_complemento">Nombre Complemento</string>
+    <string name="img_hamburguesa">es una imagen de una hamburguesa</string>
+    <string name="siguiente">Siguiente</string>
+</resources>

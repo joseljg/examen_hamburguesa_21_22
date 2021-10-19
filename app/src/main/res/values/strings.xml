@@ -4,4 +4,12 @@
     <string name="nombre_complemento">Nombre Complemento</string>
     <string name="img_hamburguesa">es una imagen de una hamburguesa</string>
     <string name="siguiente">Siguiente</string>
+    <string name="total">Total</string>
+    <string name="iva">Iva</string>
+    <string name="dispone_de_c_digo_promocional">¿Dispone de código promocional?</string>
+    <string name="codigo">Codigo</string>
+    <string name="complemento">Complemento</string>
+    <string name="cupon">Cupon</string>
+    <string name="aplicar">Aplicar</string>
+    <string name="hamburguesa">Hamburguesa</string>
 </resources>

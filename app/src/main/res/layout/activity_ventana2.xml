@@ -4,6 +4,177 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondon"
     tools:context=".Ventana2">
+
+    <TextView
+        android:id="@+id/txt_codigo"
+        android:layout_width="242dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/dispone_de_c_digo_promocional"
+        android:textColor="@color/white"
+        android:textColorHint="#880e4f"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edt_codigo"
+        android:layout_width="240dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:autofillHints="codigo"
+        android:ems="10"
+        android:hint="@string/codigo"
+        android:inputType="textPersonName"
+        android:textColorHint="#ababab"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_codigo"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/bt_aplicar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/purple_500"
+        android:text="@string/aplicar"
+        app:layout_constraintBaseline_toBaselineOf="@+id/edt_codigo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/edt_codigo" />
+
+    <TextView
+        android:id="@+id/txt_hamburguesa"
+        android:layout_width="214dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:padding="10dp"
+        android:text="@string/hamburguesa"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_codigo" />
+
+    <TextView
+        android:id="@+id/txt_hamburguesa_precio"
+        android:layout_width="138dp"
+        android:layout_height="43dp"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txt_hamburguesa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.465"
+        app:layout_constraintStart_toEndOf="@+id/txt_hamburguesa" />
+
+    <TextView
+        android:id="@+id/txt_complemento"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:padding="10dp"
+        android:text="@string/complemento"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/txt_hamburguesa"
+        app:layout_constraintStart_toStartOf="@+id/txt_hamburguesa"
+        app:layout_constraintTop_toBottomOf="@+id/txt_hamburguesa" />
+
+    <TextView
+        android:id="@+id/txt_complemento_precio"
+        android:layout_width="138dp"
+        android:layout_height="43dp"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txt_complemento"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txt_complemento" />
+
+    <TextView
+        android:id="@+id/txt_cupon"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:padding="10dp"
+        android:text="@string/cupon"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/txt_complemento"
+        app:layout_constraintStart_toStartOf="@+id/txt_complemento"
+        app:layout_constraintTop_toBottomOf="@+id/txt_complemento" />
+
+    <TextView
+        android:id="@+id/txt_cupon_precio"
+        android:layout_width="138dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="20dp"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txt_cupon"
+        app:layout_constraintStart_toEndOf="@+id/txt_cupon" />
+
+    <TextView
+        android:id="@+id/txt_iva"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:padding="10dp"
+        android:text="@string/iva"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/txt_cupon"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txt_cupon"
+        app:layout_constraintTop_toBottomOf="@+id/txt_cupon" />
+
+    <TextView
+        android:id="@+id/txt_iva_precio"
+        android:layout_width="138dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="16dp"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txt_iva"
+        app:layout_constraintStart_toEndOf="@+id/txt_iva" />
+
+    <TextView
+        android:id="@+id/txt_total"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:padding="10dp"
+        android:text="@string/total"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/txt_iva"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txt_iva"
+        app:layout_constraintTop_toBottomOf="@+id/txt_iva" />
+
+    <TextView
+        android:id="@+id/txt_total_precio"
+        android:layout_width="138dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="16dp"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txt_total"
+        app:layout_constraintStart_toEndOf="@+id/txt_total" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
